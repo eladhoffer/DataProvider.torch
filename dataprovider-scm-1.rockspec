@@ -2,12 +2,11 @@ package = "DataProvider"
 version = "scm-1"
 
 source = {
-   url = "https://github.com/eladhoffer/DataProvider.torch.git",
-   tag = "master"
+   url = "git://github.com/eladhoffer/DataProvider.torch.git"
 }
 
 description = {
-   summary = "Data Provider Tools Made By Elad Hoffer",
+   summary = "Data Provider Tools for Torch",
    detailed = [[
    	    Data Provider for torch
    ]],
