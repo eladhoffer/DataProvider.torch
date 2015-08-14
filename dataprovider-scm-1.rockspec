@@ -2,7 +2,7 @@ package = "DataProvider"
 version = "scm-1"
 
 source = {
-   url = "https://github.com/eladhoffer/DataProvider.torch.git"
+   url = "https://github.com/eladhoffer/DataProvider.torch.git",
    tag = "master"
 }
 
