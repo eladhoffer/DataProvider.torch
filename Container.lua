@@ -173,13 +173,13 @@ end
 function Container:getNextBatch()
     if self:loadBatch() then
         self.NumBatch = self.NumBatch + 1
-        return true
+        return self.Data, self.Labels
     elseif self:createBatch() then
         if self.CacheFiles then
             self:saveBatch()
         end
         self.NumBatch = self.NumBatch + 1
-        return true
+        return self.Data, self.Labels
     else
         return nil
     end
