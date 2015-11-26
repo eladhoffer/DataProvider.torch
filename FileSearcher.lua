@@ -8,7 +8,7 @@ function FileSearcher:__init(...)
     'InitializeData',
     'Initializes a DataProvider ',
     {arg='MaxNumItems', type='number', help='Number of Elements in each Batch', default = 1e8},
-    {arg='Name', type='string', help='Name of DataProvider',req = true},
+    {arg='Name', type='string', help='Name of DataProvider', default='filenames'},
     {arg='ExtractFunction', type='function', help='function used to extract Data, Label and Info', default= function(...) return ... end},
     {arg='CachePrefix', type='string', help='path to caches data',default = '.'},
     {arg='CacheFiles', type='boolean', help='cache data into files', default=false},

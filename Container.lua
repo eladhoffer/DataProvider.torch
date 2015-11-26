@@ -9,7 +9,7 @@ function Container:__init(...)
     'InitializeData',
     'Initializes a Container ',
     {arg='MaxNumItems', type='number', help='Number of Elements in each Batch',defalut = 1e6},
-    {arg='Name', type='string', help='Name of Container',default = ''},
+    {arg='Name', type='string', help='Name of Container',default = 'cache'},
     {arg='TensorType', type='string', help='Type of Tensor', default = 'torch.FloatTensor'},
     {arg='ExtractFunction', type='function', help='function used to extract Data, Label and Info', default= function(...) return ... end},
     {arg='Source', type='table', help='source of Container', req=true},
